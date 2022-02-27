@@ -101,7 +101,7 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="50" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName2"
@@ -117,7 +117,7 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="50" />
             </LinearLayout>
 
             <TextView
@@ -184,7 +184,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
+                    android:text="9999.99"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -194,7 +194,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
+                    android:text="99999.99"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -1137,13 +1137,6 @@
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
 
-            <View
-                android:id="@+id/divider12"
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:layout_weight="1"
-                android:background="?android:attr/listDivider" />
-
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
@@ -1239,9 +1232,47 @@
             <View
                 android:id="@+id/divider13"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="8dp"
                 android:layout_weight="1"
                 android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular total" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.6"
+                    android:background="#FCE4EC"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:text="100000.99"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="14pt" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostrar resumen" />
 
         </LinearLayout>
     </ScrollView>
