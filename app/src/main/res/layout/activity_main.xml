@@ -23,9 +23,10 @@
             android:textAlignment="center">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonEditarPrecios"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:onClick="editarPreciosActivity"
                 android:text="Editar precios" />
 
             <LinearLayout
@@ -34,26 +35,17 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textViewFecha"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="12/12/22 "
+                    android:paddingTop="0dp"
+                    android:text="fecha"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="12pt" />
 
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="15:54"
-                    android:textAlignment="center"
-                    android:textColor="#D500F9"
-                    android:textSize="12pt" />
             </LinearLayout>
 
             <View
@@ -73,12 +65,11 @@
                 android:textSize="10pt" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextNombreCliente"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Nombe Apellido"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="12pt" />
@@ -104,12 +95,12 @@
                     android:layout_weight="50" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/editTextTextAnticipo"
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:ems="10"
+                    android:focusable="true"
                     android:inputType="number"
-                    android:text="100000.52"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="12pt" />
@@ -137,7 +128,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxProRem1"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -146,7 +137,7 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox32"
+                    android:id="@+id/checkBoxProRem2"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -155,7 +146,7 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox33"
+                    android:id="@+id/checkBoxProRem3"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -164,7 +155,7 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox34"
+                    android:id="@+id/checkBoxProRem4"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -180,31 +171,27 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/concha"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="9999.99"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView29"
+                    android:id="@+id/androisstudiolrmp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="99999.99"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView30"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -214,7 +201,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -233,6 +219,7 @@
                     android:layout_weight="1"
                     android:autoText="false"
                     android:ems="10"
+                    android:focusable="true"
                     android:freezesText="false"
                     android:inputType="number"
                     android:paddingTop="0dp"
@@ -246,6 +233,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:focusable="true"
                     android:inputType="number"
                     android:paddingTop="0dp"
                     android:textAlignment="center"
@@ -258,6 +246,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:focusable="true"
                     android:inputType="number"
                     android:paddingTop="0dp"
                     android:textAlignment="center"
@@ -270,6 +259,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:focusable="auto"
                     android:inputType="number"
                     android:paddingTop="0dp"
                     android:textAlignment="center"
@@ -290,7 +280,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBoxProRem5"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -299,7 +289,7 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox32"
+                    android:id="@+id/checkBoxProRem6"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -308,7 +298,7 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox33"
+                    android:id="@+id/checkBoxProRem7"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -317,7 +307,7 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox34"
+                    android:id="@+id/checkBoxProRem8"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -333,21 +323,18 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView29"
+                    android:id="@+id/textViewProRem2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -357,17 +344,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView31"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -385,9 +369,9 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:focusable="true"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -398,9 +382,9 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:focusable="auto"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -413,7 +397,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -426,7 +409,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -446,7 +428,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox39"
+                    android:id="@+id/checkBoxProRem9"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -455,31 +437,32 @@
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox40"
+                    android:id="@+id/checkBoxProRem10"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:text="10"
                     android:textColor="#D500F9"
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox41"
+                    android:id="@+id/checkBoxProRem11"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:text="11"
                     android:textColor="#D500F9"
                     android:textSize="12pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox42"
+                    android:id="@+id/checkBoxProRem12"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:text="12"
                     android:textColor="#D500F9"
                     android:textSize="12pt" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -492,7 +475,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -502,7 +484,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.10"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -512,7 +493,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.10"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -522,7 +502,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.10"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -541,7 +520,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -554,7 +532,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -567,7 +544,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -580,7 +556,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -603,7 +578,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox43"
+                    android:id="@+id/checkBoxProFijCorCol"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -612,7 +587,7 @@
                     android:textSize="9pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox44"
+                    android:id="@+id/checkBoxProFijCorBiol"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1.10"
@@ -631,7 +606,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -641,7 +615,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.10"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -660,7 +633,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -673,7 +645,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -692,7 +663,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox45"
+                    android:id="@+id/checkBoxProFijPerMun"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -701,7 +672,7 @@
                     android:textSize="9pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox46"
+                    android:id="@+id/checkBoxProFijZirc"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -720,7 +691,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -730,7 +700,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -749,7 +718,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -762,7 +730,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -782,7 +749,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox49"
+                    android:id="@+id/checkBoxProFijPMA"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -791,7 +758,7 @@
                     android:textSize="9pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox50"
+                    android:id="@+id/checkBoxProFijCeram"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -810,7 +777,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -820,7 +786,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -840,7 +805,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -853,7 +817,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -872,7 +835,7 @@
                 android:textSize="10pt" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxRepYVarEncYPal"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -885,7 +848,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -898,7 +860,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -911,7 +872,7 @@
                 android:background="?android:attr/listDivider" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxRepYVarAgr1Elem"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_weight="1"
@@ -924,7 +885,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -937,7 +897,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -950,7 +909,7 @@
                 android:background="?android:attr/listDivider" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/checkBoxRepYVarSubCadUn"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -963,7 +922,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -976,7 +934,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -989,7 +946,7 @@
                 android:background="?android:attr/listDivider" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/checkBoxRepYVarRebEnPro"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -1002,7 +959,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1015,7 +971,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1028,7 +983,7 @@
                 android:background="?android:attr/listDivider" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/checkBoxRepYVarCubInd"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -1041,7 +996,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1054,7 +1008,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1067,7 +1020,7 @@
                 android:background="?android:attr/listDivider" />
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/checkBoxRepYVarPlacVacPre"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -1080,7 +1033,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1093,7 +1045,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1106,7 +1057,7 @@
                 android:background="?android:attr/listDivider" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/checkBoxRepYVarArmCroCob"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -1119,7 +1070,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="1200,50"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1132,7 +1082,6 @@
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
-                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1153,7 +1102,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkBox9"
+                    android:id="@+id/checkBoxOrtSinExp"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -1162,7 +1111,7 @@
                     android:textSize="9pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBox10"
+                    android:id="@+id/checkBoxOrtConExp"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_weight="1"
@@ -1181,7 +1130,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -1191,7 +1139,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1200,50"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -1210,7 +1157,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -1223,7 +1169,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
-                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -1243,7 +1188,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonCalcTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calcular total" />
@@ -1256,7 +1201,6 @@
                     android:background="#FCE4EC"
                     android:gravity="left"
                     android:paddingTop="5dp"
-                    android:text="100000.99"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="14pt" />
@@ -1269,10 +1213,10 @@
                 android:background="?android:attr/listDivider" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttonVerResum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mostrar resumen" />
+                android:text="Ver resumen" />
 
         </LinearLayout>
     </ScrollView>

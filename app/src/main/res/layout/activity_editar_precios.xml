@@ -6,4 +6,813 @@
     android:layout_height="match_parent"
     tools:context=".EditarPrecios">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:background="#AB47BC"
+                android:text="Editando Precios"
+                android:textAlignment="center"
+                android:textColor="#FFEBEE"
+                android:textSize="12pt" />
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:background="#AB47BC"
+                android:text="Prótesis removibles (Biotone)"
+                android:textAlignment="center"
+                android:textColor="#FFEBEE"
+                android:textSize="12pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2 dientes: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProRem2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4 dientes: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProRem4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6 dientes: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProRem6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="8 dientes: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProRem8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10 dientes: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProRem10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider19"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12 dientes: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProRem12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider20"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AB47BC"
+                android:text="Prótesis fija"
+                android:textAlignment="center"
+                android:textColor="#FFEBEE"
+                android:textSize="12pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Corona colada:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProFijCorCol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider21"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Corona en Biolon:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="10pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProFijCorEnBiol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider23"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Perno muñón:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPPProFijPerMun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider22"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Zirconio:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProFijZirc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider24"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="PMA:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProFijPMA"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider25"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cerámica:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPProFijCeram"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#AB47BC"
+                android:text="Reparaciones y Varios"
+                android:textAlignment="center"
+                android:textColor="#FFEBEE"
+                android:textSize="12pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Reparaciones en paladar y encía: "
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarPalYEnc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider26"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reparaciones y agregado de un elemento:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarAgr1Elem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider27"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Subsiguiente cada uno:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarSubCada1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider28"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rebasado en prótesis:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarRebEnProt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider29"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cubetas individuales:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarCubInd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider30"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Placa vacu-press:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarPlacVacPre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider31"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Armazón de cromo cobalto (Lab. Rochio):"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPRepYVarArmCroCob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider32"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AB47BC"
+                android:text="Ortodoncia"
+                android:textAlignment="center"
+                android:textColor="#FFEBEE"
+                android:textSize="12pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sin expansión:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPOrtSinExp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider33"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Con expansión:"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+                <EditText
+                    android:id="@+id/editTextEPOrtConExp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number|numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider34"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/buttonGuardYCerrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="guardarYCerrar"
+                android:text="guardar y cerrar" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
