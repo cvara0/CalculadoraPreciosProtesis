@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editTextCantProRem55"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -171,7 +172,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/concha"
+                    android:id="@+id/textViewProRem1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -180,7 +181,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/androisstudiolrmp"
+                    android:id="@+id/textViewProRem2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -189,6 +190,7 @@
                     android:textSize="9pt" />
 
                 <TextView
+                    android:id="@+id/textViewProRem3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -197,7 +199,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView31"
+                    android:id="@+id/textViewProRem4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -213,7 +215,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber"
+                    android:id="@+id/editTextCantProRem1"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -228,7 +230,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber13"
+                    android:id="@+id/editTextCantProRem2"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -241,7 +243,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber14"
+                    android:id="@+id/editTextCantProRem3"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -254,7 +256,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber15"
+                    android:id="@+id/editTextCantProRem4"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -323,6 +325,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/textViewProRem5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -331,7 +334,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textViewProRem2"
+                    android:id="@+id/textViewProRem6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -340,7 +343,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView30"
+                    android:id="@+id/textViewProRem7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -349,6 +352,7 @@
                     android:textSize="9pt" />
 
                 <TextView
+                    android:id="@+id/textViewProRem8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -364,7 +368,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber"
+                    android:id="@+id/editTextCantProRem5"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -377,7 +381,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber13"
+                    android:id="@+id/editTextCantProRem6"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -390,7 +394,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber14"
+                    android:id="@+id/editTextCantProRem7"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -402,7 +406,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber15"
+                    android:id="@+id/editTextCantProRem8"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -471,7 +475,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView37"
+                    android:id="@+id/textViewProRem9"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -480,28 +484,28 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView38"
+                    android:id="@+id/textViewProRem10"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView39"
+                    android:id="@+id/textViewProRem11"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView40"
+                    android:id="@+id/textViewProRem12"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -513,7 +517,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber20"
+                    android:id="@+id/editTextCantProRem9"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -525,10 +529,10 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber21"
+                    android:id="@+id/editTextCantProRem10"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
@@ -537,10 +541,10 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber22"
+                    android:id="@+id/editTextCantProRem11"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
@@ -549,10 +553,10 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber23"
+                    android:id="@+id/editTextCantProRem12"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_weight="1.10"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
@@ -602,7 +606,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView43"
+                    android:id="@+id/textViewProFijCorCol"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -611,7 +615,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView44"
+                    android:id="@+id/textViewProFijCoreEnBiol"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.10"
@@ -626,7 +630,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber24"
+                    android:id="@+id/editTextProFijCorCol"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -638,7 +642,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber25"
+                    android:id="@+id/editTextProFijCorBiol"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1.10"
@@ -687,7 +691,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView45"
+                    android:id="@+id/textViewProFijPerMun"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -696,7 +700,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView46"
+                    android:id="@+id/textViewProFijZirc"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -711,7 +715,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber26"
+                    android:id="@+id/editTextProFijPerMun"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -723,7 +727,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber27"
+                    android:id="@+id/editTextProFijZirc"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -773,7 +777,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView47"
+                    android:id="@+id/textViewProFijPMA"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -782,7 +786,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView48"
+                    android:id="@+id/textViewProFijCeram"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -798,7 +802,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber28"
+                    android:id="@+id/editTextProFijPMA"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -810,7 +814,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber29"
+                    android:id="@+id/editTextProFijCeram"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -839,12 +843,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
-                android:text="Reparaciones en encias y paladar"
+                android:text="Reparaciones en paladar y encias"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewRepYVarPalYEnc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -853,7 +857,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber2"
+                android:id="@+id/editTextRepYVarEncYPal"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -881,7 +885,7 @@
                 android:textSize="7.5pt" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textViewRepYVarAgr1Elem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -890,7 +894,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber3"
+                android:id="@+id/editTextRepYVarAgr1Elem"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -918,7 +922,7 @@
                 android:textSize="9pt" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textViewRepYVarSubCadUn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -927,7 +931,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber4"
+                android:id="@+id/editTextRepYVarSubCadUn"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -955,7 +959,7 @@
                 android:textSize="9pt" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textViewRepYVarRebEnPro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -964,7 +968,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber5"
+                android:id="@+id/editTextRepYVarRebEnPro"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -992,7 +996,7 @@
                 android:textSize="9pt" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textViewRepYVarCubInd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -1001,7 +1005,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber6"
+                android:id="@+id/editTextRepYVarCubInd"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -1029,7 +1033,7 @@
                 android:textSize="9pt" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/textViewRepYVarPlacVacPre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -1038,7 +1042,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber7"
+                android:id="@+id/editTextRepYVarPlacVacPre"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -1059,14 +1063,14 @@
             <CheckBox
                 android:id="@+id/checkBoxRepYVarArmCroCob"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Armazón de cromo cobalto (Lab. Rochio)"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textViewRepYVarArmCroCob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -1075,7 +1079,7 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextNumber8"
+                android:id="@+id/editTextRepYVarArmCroCob"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
@@ -1126,7 +1130,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/textViewOrtSinExp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -1135,7 +1139,7 @@
                     android:textSize="9pt" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/textViewOrtConExp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -1150,7 +1154,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextNumber9"
+                    android:id="@+id/editTextOrtSinExp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -1162,7 +1166,7 @@
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextNumber10"
+                    android:id="@+id/editTextOrtConExp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_weight="1"
@@ -1194,7 +1198,7 @@
                     android:text="Calcular total" />
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/textViewCalcTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_weight="1.6"

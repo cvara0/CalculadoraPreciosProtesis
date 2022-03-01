@@ -6,13 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class EditarPrecios extends AppCompatActivity {
+
+
     private EditText etEPProRem2;
     private EditText etEPProRem4;
     private EditText etEPProRem6;
@@ -22,14 +22,14 @@ public class EditarPrecios extends AppCompatActivity {
 
     private  EditText etEPProFijCorCol;
     private  EditText etEPProFijCorEnBiol;
-    private  EditText etEPPProFijPerMun;
+    private  EditText etEPProFijPerMun;
     private  EditText etEPProFijZirc;
     private  EditText etEPProFijPMA;
     private  EditText etEPProFijCeram;
 
     private  EditText etEPRepYVarPalYEnc;
     private  EditText etEPRepYVarAgr1Elem;
-    private  EditText etEPRepYVarSubCada1;
+    private  EditText etEPRepYVarSubCadaUn;
     private  EditText etEPRepYVarRebEnProt;
     private  EditText etEPRepYVarCubInd;
     private  EditText etEPRepYVarPlacVacPre;
@@ -47,6 +47,7 @@ public class EditarPrecios extends AppCompatActivity {
 
         preferencias=getSharedPreferences("preciosNuevos",Context.MODE_PRIVATE);
     //////////////////////PROTESIS REMOVIBLES
+
         etEPProRem2=(EditText)findViewById(R.id.editTextEPProRem2);
         etEPProRem2.setText(preferencias.getString("precioNuevoEPProRem2",""));
 
@@ -72,8 +73,8 @@ public class EditarPrecios extends AppCompatActivity {
         etEPProFijCorEnBiol=(EditText)findViewById(R.id.editTextEPProFijCorEnBiol);
         etEPProFijCorEnBiol.setText(preferencias.getString("precioNuevoEPProFijCorEnBiol",""));
 
-        etEPPProFijPerMun=(EditText)findViewById(R.id.editTextEPPProFijPerMun);
-        etEPPProFijPerMun.setText(preferencias.getString("precioNuevoEPPProFijPerMun",""));
+        etEPProFijPerMun=(EditText)findViewById(R.id.editTextEPProFijPerMun);
+        etEPProFijPerMun.setText(preferencias.getString("precioNuevoEPProFijPerMun",""));
 
         etEPProFijZirc=(EditText)findViewById(R.id.editTextEPProFijZirc);
         etEPProFijZirc.setText(preferencias.getString("precioNuevoEPProFijZirc",""));
@@ -91,8 +92,8 @@ public class EditarPrecios extends AppCompatActivity {
         etEPRepYVarAgr1Elem=(EditText)findViewById(R.id.editTextEPRepYVarAgr1Elem);
         etEPRepYVarAgr1Elem.setText(preferencias.getString("precioNuevoEPRepYVarAgr1Elem",""));
 
-        etEPRepYVarSubCada1=(EditText)findViewById(R.id.editTextEPRepYVarSubCada1);
-        etEPRepYVarSubCada1.setText(preferencias.getString("precioNuevoEPRepYVarSubCada1",""));
+        etEPRepYVarSubCadaUn=(EditText)findViewById(R.id.editTextEPRepYVarSubCadaUn);
+        etEPRepYVarSubCadaUn.setText(preferencias.getString("precioNuevoEPRepYVarSubCadaUn",""));
 
         etEPRepYVarRebEnProt=(EditText)findViewById(R.id.editTextEPRepYVarRebEnProt);
         etEPRepYVarRebEnProt.setText(preferencias.getString("precioNuevoEPRepYVarRebEnProt",""));
@@ -118,6 +119,7 @@ public class EditarPrecios extends AppCompatActivity {
     public void guardarYCerrar(View v) {
 
         SharedPreferences.Editor editor=preferencias.edit();
+
         editor.putString("precioNuevoEPProRem2",etEPProRem2.getText().toString());
         editor.putString("precioNuevoEPProRem4",etEPProRem4.getText().toString());
         editor.putString("precioNuevoEPProRem6",etEPProRem6.getText().toString());
@@ -127,14 +129,14 @@ public class EditarPrecios extends AppCompatActivity {
 
         editor.putString("precioNuevoEPProFijCorCol",etEPProFijCorCol.getText().toString());
         editor.putString("precioNuevoEPProFijCorEnBiol",etEPProFijCorEnBiol.getText().toString());
-        editor.putString("precioNuevoEPPProFijPerMun",etEPPProFijPerMun.getText().toString());
+        editor.putString("precioNuevoEPProFijPerMun",etEPProFijPerMun.getText().toString());
         editor.putString("precioNuevoEPProFijZirc",etEPProFijZirc.getText().toString());
         editor.putString("precioNuevoEPProFijPMA",etEPProFijPMA.getText().toString());
         editor.putString("precioNuevoEPProFijCeram",etEPProFijCeram.getText().toString());
 
         editor.putString("precioNuevoEPRepYVarPalYEnc",etEPRepYVarPalYEnc.getText().toString());
         editor.putString("precioNuevoEPRepYVarAgr1Elem",etEPRepYVarAgr1Elem.getText().toString());
-        editor.putString("precioNuevoEPRepYVarSubCada1",etEPRepYVarSubCada1.getText().toString());
+        editor.putString("precioNuevoEPRepYVarSubCadaUn",etEPRepYVarSubCadaUn.getText().toString());
         editor.putString("precioNuevoEPRepYVarRebEnProt",etEPRepYVarRebEnProt.getText().toString());
         editor.putString("precioNuevoEPRepYVarCubInd",etEPRepYVarCubInd.getText().toString());
         editor.putString("precioNuevoEPRepYVarPlacVacPre",etEPRepYVarPlacVacPre.getText().toString());
@@ -146,12 +148,38 @@ public class EditarPrecios extends AppCompatActivity {
         editor.commit();
 
         Intent i = new Intent(this, MainActivity.class);
-        i.putExtra("codigo", etEPProRem2.getText().toString());
-        startActivity(i);
 
+        i.putExtra("etEPProRem2", etEPProRem2.getText().toString());
+        i.putExtra("etEPProRem4", etEPProRem4.getText().toString());
+        i.putExtra("etEPProRem6", etEPProRem6.getText().toString());
+        i.putExtra("etEPProRem8", etEPProRem8.getText().toString());
+        i.putExtra("etEPProRem10", etEPProRem10.getText().toString());
+        i.putExtra("etEPProRem12", etEPProRem12.getText().toString());
+
+        i.putExtra("etEPProFijCorCol",etEPProFijCorCol.getText().toString());
+        i.putExtra("etEPProFijCorEnBiol",etEPProFijCorEnBiol.getText().toString());
+        i.putExtra("etEPProFijPerMun",etEPProFijPerMun.getText().toString());
+        i.putExtra("etEPProFijZirc",etEPProFijZirc.getText().toString());
+        i.putExtra("etEPProFijPMA",etEPProFijPMA.getText().toString());
+        i.putExtra("etEPProFijCeram",etEPProFijCeram.getText().toString());
+
+        i.putExtra("etEPRepYVarPalYEnc",etEPRepYVarPalYEnc.getText().toString());
+        i.putExtra("etEPRepYVarAgr1Elem",etEPRepYVarAgr1Elem.getText().toString());
+        i.putExtra("etEPRepYVarSubCadaUn",etEPRepYVarSubCadaUn.getText().toString());
+        i.putExtra("etEPRepYVarRebEnProt",etEPRepYVarRebEnProt.getText().toString());
+        i.putExtra("etEPRepYVarCubInd",etEPRepYVarCubInd.getText().toString());
+        i.putExtra("etEPRepYVarPlacVacPre",etEPRepYVarPlacVacPre.getText().toString());
+        i.putExtra("etEPRepYVarArmCroCob",etEPRepYVarArmCroCob.getText().toString());
+
+        i.putExtra("etEPOrtSinExp",etEPOrtSinExp.getText().toString());
+        i.putExtra("etEPOrtConExp",etEPOrtConExp.getText().toString());
+
+        startActivity(i);
         Toast toast1=Toast.makeText(this, "Cambios guardados",Toast.LENGTH_SHORT);
         toast1.show();
         finish();
+
+
     }
 
 }

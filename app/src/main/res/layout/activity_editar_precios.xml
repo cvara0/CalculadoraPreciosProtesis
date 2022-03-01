@@ -341,7 +341,7 @@
                     android:textSize="11pt" />
 
                 <EditText
-                    android:id="@+id/editTextEPPProFijPerMun"
+                    android:id="@+id/editTextEPProFijPerMun"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -561,7 +561,7 @@
                     android:textSize="11pt" />
 
                 <EditText
-                    android:id="@+id/editTextEPRepYVarSubCada1"
+                    android:id="@+id/editTextEPRepYVarSubCadaUn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
