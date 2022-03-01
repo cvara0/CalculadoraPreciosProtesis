@@ -19,6 +19,7 @@ public class EditarPrecios extends AppCompatActivity {
     private EditText etEPProRem8;
     private EditText etEPProRem10;
     private EditText etEPProRem12;
+    private EditText etEPProRem14;
 
     private  EditText etEPProFijCorCol;
     private  EditText etEPProFijCorEnBiol;
@@ -65,6 +66,9 @@ public class EditarPrecios extends AppCompatActivity {
 
         etEPProRem12=(EditText)findViewById(R.id.editTextEPProRem12);
         etEPProRem12.setText(preferencias.getString("precioNuevoEPProRem12",""));
+
+        etEPProRem14=(EditText)findViewById(R.id.editTextEPProRem14);
+        etEPProRem14.setText(preferencias.getString("precioNuevoEPProRem14",""));
 
         ///////////////////////PROTESIS FIJAS
         etEPProFijCorCol=(EditText)findViewById(R.id.editTextEPProFijCorCol);
@@ -126,6 +130,7 @@ public class EditarPrecios extends AppCompatActivity {
         editor.putString("precioNuevoEPProRem8",etEPProRem8.getText().toString());
         editor.putString("precioNuevoEPProRem10",etEPProRem10.getText().toString());
         editor.putString("precioNuevoEPProRem12",etEPProRem12.getText().toString());
+        editor.putString("precioNuevoEPProRem14",etEPProRem14.getText().toString());
 
         editor.putString("precioNuevoEPProFijCorCol",etEPProFijCorCol.getText().toString());
         editor.putString("precioNuevoEPProFijCorEnBiol",etEPProFijCorEnBiol.getText().toString());
@@ -155,6 +160,7 @@ public class EditarPrecios extends AppCompatActivity {
         i.putExtra("etEPProRem8", etEPProRem8.getText().toString());
         i.putExtra("etEPProRem10", etEPProRem10.getText().toString());
         i.putExtra("etEPProRem12", etEPProRem12.getText().toString());
+        i.putExtra("etEPProRem14", etEPProRem14.getText().toString());
 
         i.putExtra("etEPProFijCorCol",etEPProFijCorCol.getText().toString());
         i.putExtra("etEPProFijCorEnBiol",etEPProFijCorEnBiol.getText().toString());

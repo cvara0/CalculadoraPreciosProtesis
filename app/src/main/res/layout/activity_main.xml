@@ -96,7 +96,7 @@
                     android:layout_weight="50" />
 
                 <EditText
-                    android:id="@+id/editTextTextAnticipo"
+                    android:id="@+id/editTextAnticipo"
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:ems="10"
@@ -566,6 +566,93 @@
 
             </LinearLayout>
 
+            <View
+                android:id="@+id/divider35"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxProRem13"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="13"
+                    android:textColor="#D500F9"
+                    android:textSize="12pt" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxProRem14"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="14"
+                    android:textColor="#D500F9"
+                    android:textSize="12pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewProRem13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="9pt" />
+
+                <TextView
+                    android:id="@+id/textViewProRem14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="9pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextCantProRem13"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="0dp"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/editTextCantProRem14"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingTop="0dp"
+                    android:textAlignment="center"
+                    android:textColor="#D500F9"
+                    android:textSize="8pt" />
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/textView42"
                 android:layout_width="match_parent"
@@ -591,7 +678,7 @@
                     android:textSize="9pt" />
 
                 <CheckBox
-                    android:id="@+id/checkBoxProFijCorBiol"
+                    android:id="@+id/checkBoxProFijCorEnBiol"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1.10"
@@ -839,7 +926,7 @@
                 android:textSize="10pt" />
 
             <CheckBox
-                android:id="@+id/checkBoxRepYVarEncYPal"
+                android:id="@+id/checkBoxRepYVarPalYEnc"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
@@ -1194,7 +1281,8 @@
                 <Button
                     android:id="@+id/buttonCalcTotal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="calcularTotalButton"
                     android:text="Calcular total" />
 
                 <TextView
