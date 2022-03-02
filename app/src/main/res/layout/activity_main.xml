@@ -102,6 +102,7 @@
                     android:ems="10"
                     android:focusable="true"
                     android:inputType="number"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="12pt" />
@@ -225,6 +226,7 @@
                     android:freezesText="false"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -238,6 +240,7 @@
                     android:focusable="true"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -251,6 +254,7 @@
                     android:focusable="true"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -264,6 +268,7 @@
                     android:focusable="auto"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -376,6 +381,7 @@
                     android:focusable="true"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -389,6 +395,7 @@
                     android:focusable="auto"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -401,6 +408,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -413,6 +421,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -524,6 +533,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -536,6 +546,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -548,6 +559,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -560,6 +572,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -635,6 +648,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -647,6 +661,7 @@
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -717,25 +732,27 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextProFijCorCol"
+                    android:id="@+id/editTextCantProFijCorCol"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextProFijCorBiol"
+                    android:id="@+id/editTextCantProFijCorEnBiol"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1.10"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -802,25 +819,27 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextProFijPerMun"
+                    android:id="@+id/editTextCantProFijPerMun"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextProFijZirc"
+                    android:id="@+id/editTextCantProFijZirc"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -889,25 +908,27 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextProFijPMA"
+                    android:id="@+id/editTextCantProFijPMA"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextProFijCeram"
+                    android:id="@+id/editTextCantProFijCeram"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -944,13 +965,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarEncYPal"
+                android:id="@+id/editTextCantRepYVarPalYEnc"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -981,13 +1003,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarAgr1Elem"
+                android:id="@+id/editTextCantRepYVarAgr1Elem"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1018,13 +1041,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarSubCadUn"
+                android:id="@+id/editTextCantRepYVarSubCadUn"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1055,13 +1079,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarRebEnPro"
+                android:id="@+id/editTextCantRepYVarRebEnPro"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1092,13 +1117,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarCubInd"
+                android:id="@+id/editTextCantRepYVarCubInd"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1129,13 +1155,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarPlacVacPre"
+                android:id="@+id/editTextCantRepYVarPlacVacPre"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1166,13 +1193,14 @@
                 android:textSize="9pt" />
 
             <EditText
-                android:id="@+id/editTextRepYVarArmCroCob"
+                android:id="@+id/editTextCantRepYVarArmCroCob"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
                 android:paddingTop="0dp"
+                android:text="1"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="8pt" />
@@ -1241,25 +1269,27 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editTextOrtSinExp"
+                    android:id="@+id/editTextCantOrtSinExp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
 
                 <EditText
-                    android:id="@+id/editTextOrtConExp"
+                    android:id="@+id/editTextCantOrtConExp"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:paddingTop="0dp"
+                    android:text="1"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="8pt" />
@@ -1293,6 +1323,7 @@
                     android:background="#FCE4EC"
                     android:gravity="left"
                     android:paddingTop="5dp"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="14pt" />
@@ -1308,6 +1339,7 @@
                 android:id="@+id/buttonVerResum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="mostrarResumenButton"
                 android:text="Ver resumen" />
 
         </LinearLayout>

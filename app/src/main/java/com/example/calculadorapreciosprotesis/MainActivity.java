@@ -6,17 +6,19 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.SharedPreferences;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView fecha;
+
     //////////////////////////TEXT VIEW
     private TextView tvProRem1;
     private TextView tvProRem2;
@@ -50,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tvOrtSinExp;
     private TextView tvOrtConExp;
+
+    private TextView tvCalcTotal;
+
 //////////////////////////CHECK BOX
     private CheckBox cbProRem1;
     private CheckBox cbProRem2;
@@ -85,22 +90,75 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox cbOrtConExp;
 
     //////////////////////////EDIT TEXT
-    private EditText etNombreCliente;
+    private EditText etCantProRem1;
+    private EditText etCantProRem2;
+    private EditText etCantProRem3;
+    private EditText etCantProRem4;
+    private EditText etCantProRem5;
+    private EditText etCantProRem6;
+    private EditText etCantProRem7;
+    private EditText etCantProRem8;
+    private EditText etCantProRem9;
+    private EditText etCantProRem10;
+    private EditText etCantProRem11;
+    private EditText etCantProRem12;
+    private EditText etCantProRem13;
+    private EditText etCantProRem14;
+
+    private EditText etCantProFijCorCol;
+    private EditText etCantProFijCorEnBiol;
+    private EditText etCantProFijPerMun;
+    private EditText etCantProFijZirc;
+    private EditText etCantProFijPMA;
+    private EditText etCantProFijCeram;
+
+    private EditText etCantRepYVarPalYEnc;
+    private EditText etCantRepYVarAgr1Elem;
+    private EditText etCantRepYVarSubCadUn;
+    private EditText etCantRepYVarRebEnPro;
+    private EditText etCantRepYVarCubInd;
+    private EditText etCantRepYVarPlacVacPre;
+    private EditText etCantRepYVarArmCroCob;
+
+    private EditText etCantOrtSinExp;
+    private EditText etCantOrtConExp;
+
     private EditText etAnticipo;
-    private TextView tvCalcTotal;
+    private EditText etNombreCliente;
+
 
 
 //////////OTROS
-    private String resumen="";
+    private TextView tvFecha;
     private SharedPreferences preferencias;
+    private String resumen="";
+    private Button bVerResum;
+
+    String fechaString="";
+    String nombreClienteString="";
+    String anticipoString="";
+    String totalString="";
+
+    String proRem1String="";
+    String proRem2String="";
+    String proRem3String="";
+    String proRem4String="";
+    String proRem5String="";
+    String proRem6String="";
+    String proRem7String="";
+    String proRem8String="";
+    String proRem9String="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fecha=(TextView)findViewById(R.id.textViewFecha);
-        fecha.setText(new SimpleDateFormat("dd/MM/yyyy").format(new Date()));
+        tvFecha=(TextView)findViewById(R.id.textViewFecha);
+        tvFecha.setText(new SimpleDateFormat("dd/MM/yyyy").format(new Date()));
+
+        bVerResum=(Button)findViewById(R.id.buttonVerResum);
+        bVerResum.setVisibility(View.INVISIBLE);
 
         preferencias=getSharedPreferences("precios", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor=preferencias.edit();
@@ -281,21 +339,45 @@ public class MainActivity extends AppCompatActivity {
     public void editarPreciosActivity(View view){
 
         Intent i = new Intent(this, EditarPrecios.class );
-
         startActivity(i);
-
     }
 
     public void calcularTotalButton(View view){
         etAnticipo=(EditText) findViewById(R.id.editTextAnticipo);
         etNombreCliente=(EditText) findViewById(R.id.editTextNombreCliente);
 
-        float valorAnticipo=0;
-        try {
-            valorAnticipo=Float.parseFloat(etAnticipo.getText().toString());
-        }catch(Exception e){}
+        etCantProRem1=(EditText)findViewById(R.id.editTextCantProRem1);
+        etCantProRem2=(EditText)findViewById(R.id.editTextCantProRem2);
+        etCantProRem3=(EditText)findViewById(R.id.editTextCantProRem3);
+        etCantProRem4=(EditText)findViewById(R.id.editTextCantProRem4);
+        etCantProRem5=(EditText)findViewById(R.id.editTextCantProRem5);
+        etCantProRem6=(EditText)findViewById(R.id.editTextCantProRem6);
+        etCantProRem7=(EditText)findViewById(R.id.editTextCantProRem7);
+        etCantProRem8=(EditText)findViewById(R.id.editTextCantProRem8);
+        etCantProRem9=(EditText)findViewById(R.id.editTextCantProRem9);
+        etCantProRem10=(EditText)findViewById(R.id.editTextCantProRem10);
+        etCantProRem11=(EditText)findViewById(R.id.editTextCantProRem11);
+        etCantProRem12=(EditText)findViewById(R.id.editTextCantProRem12);
+        etCantProRem13=(EditText)findViewById(R.id.editTextCantProRem13);
+        etCantProRem14=(EditText)findViewById(R.id.editTextCantProRem14);
 
-        float total=0;//-valorAnticipo;
+        etCantProFijCorCol=(EditText)findViewById(R.id.editTextCantProFijCorCol);
+        etCantProFijCorEnBiol=(EditText)findViewById(R.id.editTextCantProFijCorEnBiol);
+        etCantProFijPerMun=(EditText)findViewById(R.id.editTextCantProFijPerMun);
+        etCantProFijZirc=(EditText)findViewById(R.id.editTextCantProFijZirc);
+        etCantProFijPMA=(EditText)findViewById(R.id.editTextCantProFijPMA);
+        etCantProFijCeram=(EditText)findViewById(R.id.editTextCantProFijCeram);
+
+        etCantRepYVarPalYEnc=(EditText)findViewById(R.id.editTextCantRepYVarPalYEnc);
+        etCantRepYVarAgr1Elem=(EditText)findViewById(R.id.editTextCantRepYVarAgr1Elem);
+        etCantRepYVarSubCadUn=(EditText)findViewById(R.id.editTextCantRepYVarSubCadUn);
+        etCantRepYVarRebEnPro=(EditText)findViewById(R.id.editTextCantRepYVarRebEnPro);
+        etCantRepYVarCubInd=(EditText)findViewById(R.id.editTextCantRepYVarCubInd);
+        etCantRepYVarPlacVacPre=(EditText)findViewById(R.id.editTextCantRepYVarPlacVacPre);
+        etCantRepYVarArmCroCob=(EditText)findViewById(R.id.editTextCantRepYVarArmCroCob);
+
+        etCantOrtSinExp=(EditText)findViewById(R.id.editTextCantOrtSinExp);
+        etCantOrtConExp=(EditText)findViewById(R.id.editTextCantOrtConExp);
 
         cbProRem1=(CheckBox) findViewById(R.id.checkBoxProRem1);
         cbProRem2=(CheckBox) findViewById(R.id.checkBoxProRem2);
@@ -330,28 +412,29 @@ public class MainActivity extends AppCompatActivity {
         cbOrtSinExp=(CheckBox) findViewById(R.id.checkBoxOrtSinExp);
         cbOrtConExp=(CheckBox) findViewById(R.id.checkBoxOrtConExp);
 
-        String ProRem1String="";
-        String ProRem2String="";
-        String ProRem3String="";
-        String ProRem4String="";
-        String ProRem5String="";
-        String ProRem6String="";
-        String ProRem7String="";
-        String ProRem8String="";
-        String ProRem9String="";
+        float valorAnticipo=0;
+        try {
+            valorAnticipo=Float.parseFloat(etAnticipo.getText().toString());
+        }catch(Exception e){}
 
+        float total=0;//-valorAnticipo;
 
-        if(cbProRem1.isChecked()==true){
-          total+=Float.parseFloat(tvProRem1.getText().toString());
-            String ProRem1String="hola1";//dec
+        if(cbProRem1.isChecked()){
+          total+=(Float.parseFloat(tvProRem1.getText().toString())*Float.parseFloat(etCantProRem1.getText().toString()));
+          proRem1String="-Prótesis removible de 1 diente x "+etCantProRem1.getText().toString() +": $ "+(Float.parseFloat(tvProRem1.getText().toString())*Float.parseFloat(etCantProRem1.getText().toString()))+"\n";
+        } else{
+            proRem1String="";
         }
         if(cbProRem2.isChecked()){
-          total+=Float.parseFloat(tvProRem2.getText().toString());
-            resumen+="hola2";
-
-        }
+            total+=(Float.parseFloat(tvProRem2.getText().toString()))*Float.parseFloat(etCantProRem2.getText().toString());
+            proRem2String="-Prótesis removible de 2 dientes x "+etCantProRem2.getText().toString() +": $ "+(Float.parseFloat(tvProRem2.getText().toString())*Float.parseFloat(etCantProRem2.getText().toString()))+"\n";
+        } else{
+            proRem2String="";
+        }//continuar desde aqui
         if(cbProRem3.isChecked()){
           total+=Float.parseFloat(tvProRem3.getText().toString());
+        } else{
+            proRem3String="";
         }
         if(cbProRem4.isChecked()){
           total+=Float.parseFloat(tvProRem4.getText().toString());
@@ -437,8 +520,22 @@ public class MainActivity extends AppCompatActivity {
         total-=valorAnticipo;
         total=(float)Math.round(total*100)/100;
         tvCalcTotal=(TextView) findViewById(R.id.textViewCalcTotal);
-        //tvCalcTotal.setText(String.valueOf(total));
-        tvCalcTotal.setText(resumen);
+        tvCalcTotal.setText(String.valueOf(total));
+
+        fechaString="-Fecha: "+tvFecha.getText().toString()+"\n";
+        nombreClienteString="-Cliente: "+etNombreCliente.getText().toString()+"\n";
+        anticipoString="-Anticipo: $ "+etAnticipo.getText().toString()+"\n";
+        totalString="-Total: $ "+tvCalcTotal.getText().toString()+"\n";
+        bVerResum.setVisibility(View.VISIBLE);
+    }
+
+    public void mostrarResumenButton(View view){
+
+        Intent i = new Intent(this, Resumen.class );
+
+        i.putExtra("resumen", (fechaString +nombreClienteString+anticipoString+proRem1String+proRem2String+totalString));
+
+        startActivity(i);
 
     }
 }
