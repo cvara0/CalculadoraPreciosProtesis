@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvFecha;
     private SharedPreferences preferencias;
     private String resumen="";
-    private Button bVerResum;
+    //private Button bVerResum;
 
     String fechaString="";
     String nombreClienteString="";
@@ -148,6 +148,29 @@ public class MainActivity extends AppCompatActivity {
     String proRem7String="";
     String proRem8String="";
     String proRem9String="";
+    String proRem10String="";
+    String proRem11String="";
+    String proRem12String="";
+    String proRem13String="";
+    String proRem14String="";
+    String proFijCorColString="";
+    String proFijCorEnBiolString="";
+    String proFijPerMunString="";
+    String proFijZircString="";
+    String proFijPMAString="";
+    String proFijCeramString="";
+
+    String repYVarPalYEncString="";
+    String repYVarAgr1ElemString="";
+    String repYVarSubCadUnString="";
+    String repYVarRebEnProString="";
+    String repYVarCubIndString="";
+    String repYVarPlacVacPreString="";
+    String repYVarArmCroCobString="";
+
+    String ortSinExpString="";
+    String ortConExpString="";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -157,8 +180,6 @@ public class MainActivity extends AppCompatActivity {
         tvFecha=(TextView)findViewById(R.id.textViewFecha);
         tvFecha.setText(new SimpleDateFormat("dd/MM/yyyy").format(new Date()));
 
-        bVerResum=(Button)findViewById(R.id.buttonVerResum);
-        bVerResum.setVisibility(View.INVISIBLE);
 
         preferencias=getSharedPreferences("precios", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor=preferencias.edit();
@@ -166,97 +187,97 @@ public class MainActivity extends AppCompatActivity {
 //////////////////////PROTESIS REMOVIBLES
         try {
             editor.putString("precioNuevoProRem1",String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem2"))*100/2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
         editor.putString("precioNuevoProRem2", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem2"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
         editor.putString("precioNuevoProRem3", String.valueOf((float) Math.round((Float.parseFloat(getIntent().getStringExtra("etEPProRem2")) + Float.parseFloat(getIntent().getStringExtra("etEPProRem4"))) *100/ 2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem4", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem4"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem5", String.valueOf((float) Math.round((Float.parseFloat(getIntent().getStringExtra("etEPProRem4")) + Float.parseFloat(getIntent().getStringExtra("etEPProRem6"))) *100/ 2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem6", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem6"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem7", String.valueOf((float) Math.round((Float.parseFloat(getIntent().getStringExtra("etEPProRem6")) + Float.parseFloat(getIntent().getStringExtra("etEPProRem8"))) *100/ 2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem8", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem8"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem9", String.valueOf((float) Math.round((Float.parseFloat(getIntent().getStringExtra("etEPProRem8")) + Float.parseFloat(getIntent().getStringExtra("etEPProRem10"))) *100/ 2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem10", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem10"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem11", String.valueOf((float) Math.round((Float.parseFloat(getIntent().getStringExtra("etEPProRem10")) + Float.parseFloat(getIntent().getStringExtra("etEPProRem12"))) *100/ 2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem12", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem12"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem13", String.valueOf((float) Math.round((Float.parseFloat(getIntent().getStringExtra("etEPProRem12")) + Float.parseFloat(getIntent().getStringExtra("etEPProRem14"))) *100/ 2)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProRem14", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProRem14"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
 
         ///////////////////////PROTESIS FIJAS
         try {
         editor.putString("precioNuevoProFijCorCol", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProFijCorCol"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProFijCorEnBiol", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProFijCorEnBiol"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProFijPerMun", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProFijPerMun"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProFijZirc", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProFijZirc"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProFijPMA", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProFijPMA"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoProFijCeram", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPProFijCeram"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
 
         ///////////////////////REPARACIONES Y VARIOS
         try {
             editor.putString("precioNuevoRepYVarPalYEnc", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarPalYEnc"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoRepYVarAgr1Elem", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarAgr1Elem"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoRepYVarSubCadUn", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarSubCadaUn"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoRepYVarRebEnPro", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarRebEnProt"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoRepYVarCubInd", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarCubInd"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoRepYVarPlacVacPre", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarPlacVacPre"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevoRepYVarArmCroCob", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPRepYVarArmCroCob"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
 
         ///////////////////////ORTODONCIA
         try {
         editor.putString("precioNuevotvOrtSinExp", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPOrtSinExp"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
         try {
             editor.putString("precioNuevotvOrtConExp", String.valueOf((float) Math.round(Float.parseFloat(getIntent().getStringExtra("etEPOrtConExp"))*100)/100));
-        }catch (Exception e){}
+        }catch (Exception ignored){}
 
         editor.commit();
 
@@ -342,179 +363,261 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void calcularTotalButton(View view){
-        etAnticipo=(EditText) findViewById(R.id.editTextAnticipo);
-        etNombreCliente=(EditText) findViewById(R.id.editTextNombreCliente);
+    public void calcularTotalButton(View view) {
+        etAnticipo = (EditText) findViewById(R.id.editTextAnticipo);
+        etNombreCliente = (EditText) findViewById(R.id.editTextNombreCliente);
 
-        etCantProRem1=(EditText)findViewById(R.id.editTextCantProRem1);
-        etCantProRem2=(EditText)findViewById(R.id.editTextCantProRem2);
-        etCantProRem3=(EditText)findViewById(R.id.editTextCantProRem3);
-        etCantProRem4=(EditText)findViewById(R.id.editTextCantProRem4);
-        etCantProRem5=(EditText)findViewById(R.id.editTextCantProRem5);
-        etCantProRem6=(EditText)findViewById(R.id.editTextCantProRem6);
-        etCantProRem7=(EditText)findViewById(R.id.editTextCantProRem7);
-        etCantProRem8=(EditText)findViewById(R.id.editTextCantProRem8);
-        etCantProRem9=(EditText)findViewById(R.id.editTextCantProRem9);
-        etCantProRem10=(EditText)findViewById(R.id.editTextCantProRem10);
-        etCantProRem11=(EditText)findViewById(R.id.editTextCantProRem11);
-        etCantProRem12=(EditText)findViewById(R.id.editTextCantProRem12);
-        etCantProRem13=(EditText)findViewById(R.id.editTextCantProRem13);
-        etCantProRem14=(EditText)findViewById(R.id.editTextCantProRem14);
+        etCantProRem1 = (EditText) findViewById(R.id.editTextCantProRem1);
+        etCantProRem2 = (EditText) findViewById(R.id.editTextCantProRem2);
+        etCantProRem3 = (EditText) findViewById(R.id.editTextCantProRem3);
+        etCantProRem4 = (EditText) findViewById(R.id.editTextCantProRem4);
+        etCantProRem5 = (EditText) findViewById(R.id.editTextCantProRem5);
+        etCantProRem6 = (EditText) findViewById(R.id.editTextCantProRem6);
+        etCantProRem7 = (EditText) findViewById(R.id.editTextCantProRem7);
+        etCantProRem8 = (EditText) findViewById(R.id.editTextCantProRem8);
+        etCantProRem9 = (EditText) findViewById(R.id.editTextCantProRem9);
+        etCantProRem10 = (EditText) findViewById(R.id.editTextCantProRem10);
+        etCantProRem11 = (EditText) findViewById(R.id.editTextCantProRem11);
+        etCantProRem12 = (EditText) findViewById(R.id.editTextCantProRem12);
+        etCantProRem13 = (EditText) findViewById(R.id.editTextCantProRem13);
+        etCantProRem14 = (EditText) findViewById(R.id.editTextCantProRem14);
 
-        etCantProFijCorCol=(EditText)findViewById(R.id.editTextCantProFijCorCol);
-        etCantProFijCorEnBiol=(EditText)findViewById(R.id.editTextCantProFijCorEnBiol);
-        etCantProFijPerMun=(EditText)findViewById(R.id.editTextCantProFijPerMun);
-        etCantProFijZirc=(EditText)findViewById(R.id.editTextCantProFijZirc);
-        etCantProFijPMA=(EditText)findViewById(R.id.editTextCantProFijPMA);
-        etCantProFijCeram=(EditText)findViewById(R.id.editTextCantProFijCeram);
+        etCantProFijCorCol = (EditText) findViewById(R.id.editTextCantProFijCorCol);
+        etCantProFijCorEnBiol = (EditText) findViewById(R.id.editTextCantProFijCorEnBiol);
+        etCantProFijPerMun = (EditText) findViewById(R.id.editTextCantProFijPerMun);
+        etCantProFijZirc = (EditText) findViewById(R.id.editTextCantProFijZirc);
+        etCantProFijPMA = (EditText) findViewById(R.id.editTextCantProFijPMA);
+        etCantProFijCeram = (EditText) findViewById(R.id.editTextCantProFijCeram);
 
-        etCantRepYVarPalYEnc=(EditText)findViewById(R.id.editTextCantRepYVarPalYEnc);
-        etCantRepYVarAgr1Elem=(EditText)findViewById(R.id.editTextCantRepYVarAgr1Elem);
-        etCantRepYVarSubCadUn=(EditText)findViewById(R.id.editTextCantRepYVarSubCadUn);
-        etCantRepYVarRebEnPro=(EditText)findViewById(R.id.editTextCantRepYVarRebEnPro);
-        etCantRepYVarCubInd=(EditText)findViewById(R.id.editTextCantRepYVarCubInd);
-        etCantRepYVarPlacVacPre=(EditText)findViewById(R.id.editTextCantRepYVarPlacVacPre);
-        etCantRepYVarArmCroCob=(EditText)findViewById(R.id.editTextCantRepYVarArmCroCob);
+        etCantRepYVarPalYEnc = (EditText) findViewById(R.id.editTextCantRepYVarPalYEnc);
+        etCantRepYVarAgr1Elem = (EditText) findViewById(R.id.editTextCantRepYVarAgr1Elem);
+        etCantRepYVarSubCadUn = (EditText) findViewById(R.id.editTextCantRepYVarSubCadUn);
+        etCantRepYVarRebEnPro = (EditText) findViewById(R.id.editTextCantRepYVarRebEnPro);
+        etCantRepYVarCubInd = (EditText) findViewById(R.id.editTextCantRepYVarCubInd);
+        etCantRepYVarPlacVacPre = (EditText) findViewById(R.id.editTextCantRepYVarPlacVacPre);
+        etCantRepYVarArmCroCob = (EditText) findViewById(R.id.editTextCantRepYVarArmCroCob);
 
-        etCantOrtSinExp=(EditText)findViewById(R.id.editTextCantOrtSinExp);
-        etCantOrtConExp=(EditText)findViewById(R.id.editTextCantOrtConExp);
+        etCantOrtSinExp = (EditText) findViewById(R.id.editTextCantOrtSinExp);
+        etCantOrtConExp = (EditText) findViewById(R.id.editTextCantOrtConExp);
 
-        cbProRem1=(CheckBox) findViewById(R.id.checkBoxProRem1);
-        cbProRem2=(CheckBox) findViewById(R.id.checkBoxProRem2);
-        cbProRem3=(CheckBox) findViewById(R.id.checkBoxProRem3);
-        cbProRem4=(CheckBox) findViewById(R.id.checkBoxProRem4);
-        cbProRem5=(CheckBox) findViewById(R.id.checkBoxProRem5);
-        cbProRem6=(CheckBox) findViewById(R.id.checkBoxProRem6);
-        cbProRem7=(CheckBox) findViewById(R.id.checkBoxProRem7);
-        cbProRem8=(CheckBox) findViewById(R.id.checkBoxProRem8);
-        cbProRem9=(CheckBox) findViewById(R.id.checkBoxProRem9);
-        cbProRem10=(CheckBox) findViewById(R.id.checkBoxProRem10);
-        cbProRem11=(CheckBox) findViewById(R.id.checkBoxProRem11);
-        cbProRem12=(CheckBox) findViewById(R.id.checkBoxProRem12);
-        cbProRem13=(CheckBox) findViewById(R.id.checkBoxProRem13);
-        cbProRem14=(CheckBox) findViewById(R.id.checkBoxProRem14);
+        cbProRem1 = (CheckBox) findViewById(R.id.checkBoxProRem1);
+        cbProRem2 = (CheckBox) findViewById(R.id.checkBoxProRem2);
+        cbProRem3 = (CheckBox) findViewById(R.id.checkBoxProRem3);
+        cbProRem4 = (CheckBox) findViewById(R.id.checkBoxProRem4);
+        cbProRem5 = (CheckBox) findViewById(R.id.checkBoxProRem5);
+        cbProRem6 = (CheckBox) findViewById(R.id.checkBoxProRem6);
+        cbProRem7 = (CheckBox) findViewById(R.id.checkBoxProRem7);
+        cbProRem8 = (CheckBox) findViewById(R.id.checkBoxProRem8);
+        cbProRem9 = (CheckBox) findViewById(R.id.checkBoxProRem9);
+        cbProRem10 = (CheckBox) findViewById(R.id.checkBoxProRem10);
+        cbProRem11 = (CheckBox) findViewById(R.id.checkBoxProRem11);
+        cbProRem12 = (CheckBox) findViewById(R.id.checkBoxProRem12);
+        cbProRem13 = (CheckBox) findViewById(R.id.checkBoxProRem13);
+        cbProRem14 = (CheckBox) findViewById(R.id.checkBoxProRem14);
 
-        cbProFijCorCol=(CheckBox) findViewById(R.id.checkBoxProFijCorCol);
-        cbProFijCorEnBiol=(CheckBox) findViewById(R.id.checkBoxProFijCorEnBiol);
-        cbProFijPerMun=(CheckBox) findViewById(R.id.checkBoxProFijPerMun);
-        cbProFijZirc=(CheckBox) findViewById(R.id.checkBoxProFijZirc);
-        cbProFijPMA=(CheckBox) findViewById(R.id.checkBoxProFijPMA);
-        cbProFijCeram=(CheckBox) findViewById(R.id.checkBoxProFijCeram);
+        cbProFijCorCol = (CheckBox) findViewById(R.id.checkBoxProFijCorCol);
+        cbProFijCorEnBiol = (CheckBox) findViewById(R.id.checkBoxProFijCorEnBiol);
+        cbProFijPerMun = (CheckBox) findViewById(R.id.checkBoxProFijPerMun);
+        cbProFijZirc = (CheckBox) findViewById(R.id.checkBoxProFijZirc);
+        cbProFijPMA = (CheckBox) findViewById(R.id.checkBoxProFijPMA);
+        cbProFijCeram = (CheckBox) findViewById(R.id.checkBoxProFijCeram);
 
-        cbRepYVarPalYEnc=(CheckBox) findViewById(R.id.checkBoxRepYVarPalYEnc);
-        cbRepYVarAgr1Elem=(CheckBox) findViewById(R.id.checkBoxRepYVarAgr1Elem);
-        cbRepYVarSubCadUn=(CheckBox) findViewById(R.id.checkBoxRepYVarSubCadUn);
-        cbRepYVarRebEnPro=(CheckBox) findViewById(R.id.checkBoxRepYVarRebEnPro);
-        cbRepYVarCubInd=(CheckBox) findViewById(R.id.checkBoxRepYVarCubInd);
-        cbRepYVarPlacVacPre=(CheckBox) findViewById(R.id.checkBoxRepYVarPlacVacPre);
-        cbRepYVarArmCroCob=(CheckBox) findViewById(R.id.checkBoxRepYVarArmCroCob);
+        cbRepYVarPalYEnc = (CheckBox) findViewById(R.id.checkBoxRepYVarPalYEnc);
+        cbRepYVarAgr1Elem = (CheckBox) findViewById(R.id.checkBoxRepYVarAgr1Elem);
+        cbRepYVarSubCadUn = (CheckBox) findViewById(R.id.checkBoxRepYVarSubCadUn);
+        cbRepYVarRebEnPro = (CheckBox) findViewById(R.id.checkBoxRepYVarRebEnPro);
+        cbRepYVarCubInd = (CheckBox) findViewById(R.id.checkBoxRepYVarCubInd);
+        cbRepYVarPlacVacPre = (CheckBox) findViewById(R.id.checkBoxRepYVarPlacVacPre);
+        cbRepYVarArmCroCob = (CheckBox) findViewById(R.id.checkBoxRepYVarArmCroCob);
 
-        cbOrtSinExp=(CheckBox) findViewById(R.id.checkBoxOrtSinExp);
-        cbOrtConExp=(CheckBox) findViewById(R.id.checkBoxOrtConExp);
+        cbOrtSinExp = (CheckBox) findViewById(R.id.checkBoxOrtSinExp);
+        cbOrtConExp = (CheckBox) findViewById(R.id.checkBoxOrtConExp);
 
-        float valorAnticipo=0;
+        float valorAnticipo = 0;
         try {
-            valorAnticipo=Float.parseFloat(etAnticipo.getText().toString());
-        }catch(Exception e){}
+            valorAnticipo = Float.parseFloat(etAnticipo.getText().toString());
+        } catch (Exception e) {
+        }
 
-        float total=0;//-valorAnticipo;
+        float total = 0;
 
-        if(cbProRem1.isChecked()){
-          total+=(Float.parseFloat(tvProRem1.getText().toString())*Float.parseFloat(etCantProRem1.getText().toString()));
-          proRem1String="-Prótesis removible de 1 diente x "+etCantProRem1.getText().toString() +": $ "+(Float.parseFloat(tvProRem1.getText().toString())*Float.parseFloat(etCantProRem1.getText().toString()))+"\n";
-        } else{
-            proRem1String="";
+        if (cbProRem1.isChecked()) {
+            total += (Float.parseFloat(tvProRem1.getText().toString()) * Float.parseFloat(etCantProRem1.getText().toString()));
+            proRem1String = "-Prót. rem. 1 diente:\n-----Cantidad: " + etCantProRem1.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem1.getText().toString()) * Float.parseFloat(etCantProRem1.getText().toString())) + "\n";
+
+
+        } else {
+            proRem1String = "";
         }
-        if(cbProRem2.isChecked()){
-            total+=(Float.parseFloat(tvProRem2.getText().toString()))*Float.parseFloat(etCantProRem2.getText().toString());
-            proRem2String="-Prótesis removible de 2 dientes x "+etCantProRem2.getText().toString() +": $ "+(Float.parseFloat(tvProRem2.getText().toString())*Float.parseFloat(etCantProRem2.getText().toString()))+"\n";
-        } else{
-            proRem2String="";
-        }//continuar desde aqui
-        if(cbProRem3.isChecked()){
-          total+=Float.parseFloat(tvProRem3.getText().toString());
-        } else{
-            proRem3String="";
+        if (cbProRem2.isChecked()) {
+            total += (Float.parseFloat(tvProRem2.getText().toString())) * Float.parseFloat(etCantProRem2.getText().toString());
+            proRem2String = "-Prót. rem. 2 dientes:\n-----Cantidad: " + etCantProRem2.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem2.getText().toString()) * Float.parseFloat(etCantProRem2.getText().toString())) + "\n";
+
+
+        } else {
+            proRem2String = "";
         }
-        if(cbProRem4.isChecked()){
-          total+=Float.parseFloat(tvProRem4.getText().toString());
+        if (cbProRem3.isChecked()) {
+            total += (Float.parseFloat(tvProRem3.getText().toString()) * Float.parseFloat(etCantProRem3.getText().toString()));
+            proRem3String = "-Prót. rem. 3 dientes:\n-----Cantidad: " + etCantProRem3.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem3.getText().toString()) * Float.parseFloat(etCantProRem3.getText().toString())) + "\n";
+        } else {
+            proRem3String = "";
         }
-        if(cbProRem5.isChecked()){
-          total+=Float.parseFloat(tvProRem5.getText().toString());
+        if (cbProRem4.isChecked()) {
+            total += (Float.parseFloat(tvProRem4.getText().toString())) * Float.parseFloat(etCantProRem4.getText().toString());
+            proRem4String = "-Prót. rem. 2 dientes:\n-----Cantidad: " + etCantProRem4.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem4.getText().toString()) * Float.parseFloat(etCantProRem4.getText().toString())) + "\n";
+        }else {
+            proRem4String = "";
         }
-        if(cbProRem6.isChecked()){
-          total+=Float.parseFloat(tvProRem6.getText().toString());
+        if (cbProRem5.isChecked()) {
+            total += (Float.parseFloat(tvProRem5.getText().toString()) * Float.parseFloat(etCantProRem5.getText().toString()));
+            proRem5String = "-Prót. rem. 5 dientes:\n-----Cantidad: " + etCantProRem5.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem5.getText().toString()) * Float.parseFloat(etCantProRem5.getText().toString())) + "\n";
+        }else {
+            proRem5String = "";
         }
-        if(cbProRem7.isChecked()){
-          total+=Float.parseFloat(tvProRem7.getText().toString());
+        if (cbProRem6.isChecked()) {
+            total += (Float.parseFloat(tvProRem6.getText().toString())) * Float.parseFloat(etCantProRem6.getText().toString());
+            proRem6String = "-Prót. rem. 6 dientes:\n-----Cantidad: " + etCantProRem6.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem6.getText().toString()) * Float.parseFloat(etCantProRem6.getText().toString())) + "\n";
+        }else {
+            proRem6String = "";
         }
-        if(cbProRem8.isChecked()){
-          total+=Float.parseFloat(tvProRem8.getText().toString());
+        if (cbProRem7.isChecked()) {
+            total += (Float.parseFloat(tvProRem7.getText().toString()) * Float.parseFloat(etCantProRem7.getText().toString()));
+            proRem7String = "-Prót. rem. 7 dientes:\n-----Cantidad: " + etCantProRem7.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem7.getText().toString()) * Float.parseFloat(etCantProRem7.getText().toString())) + "\n";
+        }else {
+            proRem7String = "";
         }
-        if(cbProRem9.isChecked()){
-          total+=Float.parseFloat(tvProRem9.getText().toString());
+        if (cbProRem8.isChecked()) {
+            total += (Float.parseFloat(tvProRem8.getText().toString())) * Float.parseFloat(etCantProRem8.getText().toString());
+            proRem8String = "-Prót. rem. 8 dientes:\n-----Cantidad: " + etCantProRem8.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem8.getText().toString()) * Float.parseFloat(etCantProRem8.getText().toString())) + "\n";
+        }else {
+            proRem8String = "";
         }
-        if(cbProRem10.isChecked()){
-          total+=Float.parseFloat(tvProRem10.getText().toString());
+        if (cbProRem9.isChecked()) {
+            total += (Float.parseFloat(tvProRem9.getText().toString()) * Float.parseFloat(etCantProRem9.getText().toString()));
+            proRem9String = "-Prót. rem. 9 dientes:\n-----Cantidad: " + etCantProRem9.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem9.getText().toString()) * Float.parseFloat(etCantProRem9.getText().toString())) + "\n";
+        }else {
+            proRem9String = "";
         }
-        if(cbProRem11.isChecked()){
-          total+=Float.parseFloat(tvProRem11.getText().toString());
+        if (cbProRem10.isChecked()) {
+            total += (Float.parseFloat(tvProRem10.getText().toString())) * Float.parseFloat(etCantProRem10.getText().toString());
+            proRem10String = "-Prót. rem. 10 dientes:\n-----Cantidad: " + etCantProRem10.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem10.getText().toString()) * Float.parseFloat(etCantProRem10.getText().toString())) + "\n";
+        }else {
+            proRem10String = "";
         }
-        if(cbProRem12.isChecked()){
-          total+=Float.parseFloat(tvProRem12.getText().toString());
+        if (cbProRem11.isChecked()) {
+            total += (Float.parseFloat(tvProRem11.getText().toString()) * Float.parseFloat(etCantProRem11.getText().toString()));
+            proRem11String = "-Prót. rem. 11 dientes:\n-----Cantidad: " + etCantProRem11.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem11.getText().toString()) * Float.parseFloat(etCantProRem11.getText().toString())) + "\n";
+        }else {
+            proRem11String = "";
         }
-        if(cbProRem13.isChecked()){
-          total+=Float.parseFloat(tvProRem13.getText().toString());
+        if (cbProRem12.isChecked()) {
+            total += (Float.parseFloat(tvProRem12.getText().toString())) * Float.parseFloat(etCantProRem12.getText().toString());
+            proRem12String = "-Prót. rem. 12 dientes:\n-----Cantidad: " + etCantProRem12.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem12.getText().toString()) * Float.parseFloat(etCantProRem12.getText().toString())) + "\n";
+        }else {
+            proRem12String = "";
+        }
+        if (cbProRem13.isChecked()) {
+            total += (Float.parseFloat(tvProRem13.getText().toString()) * Float.parseFloat(etCantProRem13.getText().toString()));
+            proRem13String = "-Prót. rem. 13 dientes:\n-----Cantidad: " + etCantProRem13.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem13.getText().toString()) * Float.parseFloat(etCantProRem13.getText().toString())) + "\n";
+        }else {
+            proRem13String = "";
         }
         if(cbProRem14.isChecked()){
-          total+=Float.parseFloat(tvProRem14.getText().toString());
+            total += (Float.parseFloat(tvProRem14.getText().toString())) * Float.parseFloat(etCantProRem14.getText().toString());
+            proRem14String = "-Prót. rem. 14 dientes:\n-----Cantidad: " + etCantProRem14.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProRem14.getText().toString()) * Float.parseFloat(etCantProRem14.getText().toString())) + "\n";
+        }else {
+            proRem14String = "";
         }
-
         if(cbProFijCorCol.isChecked()){
-          total+=Float.parseFloat(tvProFijCorCol.getText().toString());
+            total += (Float.parseFloat(tvProFijCorCol.getText().toString())) * Float.parseFloat(etCantProFijCorCol.getText().toString());
+            proFijCorColString = "-Corona colada:\n-----Cantidad: " + etCantProFijCorCol.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProFijCorCol.getText().toString()) * Float.parseFloat(etCantProFijCorCol.getText().toString())) + "\n";
+        }else {
+            proFijCorColString = "";
         }
         if(cbProFijCorEnBiol.isChecked()){
-          total+=Float.parseFloat(tvProFijCorEnBiol.getText().toString());
+            total += (Float.parseFloat(tvProFijCorEnBiol.getText().toString())) * Float.parseFloat(etCantProFijCorEnBiol.getText().toString());
+            proFijCorEnBiolString = "-Corona en Biolon:\n-----Cantidad: " + etCantProFijCorEnBiol.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProFijCorEnBiol.getText().toString()) * Float.parseFloat(etCantProFijCorEnBiol.getText().toString())) + "\n";
+        }else {
+            proFijCorEnBiolString = "";
         }
         if(cbProFijPerMun.isChecked()){
-          total+=Float.parseFloat(tvProFijPerMun.getText().toString());
+            total += (Float.parseFloat(tvProFijPerMun.getText().toString())) * Float.parseFloat(etCantProFijPerMun.getText().toString());
+            proFijPerMunString = "-Perno muñón:\n-----Cantidad: " + etCantProFijPerMun.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProFijPerMun.getText().toString()) * Float.parseFloat(etCantProFijPerMun.getText().toString())) + "\n";
+        }else {
+            proFijPerMunString = "";
         }
         if(cbProFijZirc.isChecked()){
-          total+=Float.parseFloat(tvProFijZirc.getText().toString());
+            total += (Float.parseFloat(tvProFijZirc.getText().toString())) * Float.parseFloat(etCantProFijZirc.getText().toString());
+            proFijZircString = "-Zirconio:\n-----Cantidad: " + etCantProFijZirc.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProFijZirc.getText().toString()) * Float.parseFloat(etCantProFijZirc.getText().toString())) + "\n";
+        }else {
+            proFijZircString = "";
         }
         if(cbProFijPMA.isChecked()){
-          total+=Float.parseFloat(tvProFijPMA.getText().toString());
+            total += (Float.parseFloat(tvProFijPMA.getText().toString())) * Float.parseFloat(etCantProFijPMA.getText().toString());
+            proFijPMAString = "-PMA:\n-----Cantidad: " + etCantProFijPMA.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProFijPMA.getText().toString()) * Float.parseFloat(etCantProFijPMA.getText().toString())) + "\n";
+        }else {
+            proFijPMAString = "";
         }
         if(cbProFijCeram.isChecked()){
-          total+=Float.parseFloat(tvProFijCeram.getText().toString());
+            total += (Float.parseFloat(tvProFijCeram.getText().toString())) * Float.parseFloat(etCantProFijCeram.getText().toString());
+            proFijCeramString = "-Cerámica:\n-----Cantidad: " + etCantProFijCeram.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvProFijCeram.getText().toString()) * Float.parseFloat(etCantProFijCeram.getText().toString())) + "\n";
+        }else {
+            proFijCeramString = "";
         }
-
         if(cbRepYVarPalYEnc.isChecked()){
-          total+=Float.parseFloat(tvRepYVarPalYEnc.getText().toString());
+            total += (Float.parseFloat(tvRepYVarPalYEnc.getText().toString())) * Float.parseFloat(etCantRepYVarPalYEnc.getText().toString());
+            repYVarPalYEncString = "-Reparación paladar/encía:\n-----Cantidad: " + etCantRepYVarPalYEnc.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarPalYEnc.getText().toString()) * Float.parseFloat(etCantRepYVarPalYEnc.getText().toString())) + "\n";
+        }else {
+            repYVarPalYEncString = "";
         }
         if(cbRepYVarAgr1Elem.isChecked()){
-          total+=Float.parseFloat(tvRepYVarAgr1Elem.getText().toString());}
+            total += (Float.parseFloat(tvRepYVarAgr1Elem.getText().toString())) * Float.parseFloat(etCantRepYVarAgr1Elem.getText().toString());
+            repYVarAgr1ElemString = "-Reparación/agregado de elemento:\n-----Cantidad: " + etCantRepYVarAgr1Elem.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarAgr1Elem.getText().toString()) * Float.parseFloat(etCantRepYVarAgr1Elem.getText().toString())) + "\n";
+        }else {
+            repYVarAgr1ElemString = "";
+        }
         if(cbRepYVarSubCadUn.isChecked()){
-          total+=Float.parseFloat(tvRepYVarSubCadUn.getText().toString());
+            total += (Float.parseFloat(tvRepYVarSubCadUn.getText().toString())) * Float.parseFloat(etCantRepYVarSubCadUn.getText().toString());
+            repYVarSubCadUnString = "-Subsiguiente:\n-----Cantidad: " + etCantRepYVarSubCadUn.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarSubCadUn.getText().toString()) * Float.parseFloat(etCantRepYVarSubCadUn.getText().toString())) + "\n";
+        }else {
+            repYVarSubCadUnString = "";
         }
         if(cbRepYVarRebEnPro.isChecked()){
-          total+=Float.parseFloat(tvRepYVarRebEnPro.getText().toString());
+            total += (Float.parseFloat(tvRepYVarRebEnPro.getText().toString())) * Float.parseFloat(etCantRepYVarRebEnPro.getText().toString());
+            repYVarRebEnProString = "-Rebasado en prótesis:\n-----Cantidad: " + etCantRepYVarRebEnPro.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarRebEnPro.getText().toString()) * Float.parseFloat(etCantRepYVarRebEnPro.getText().toString())) + "\n";
+        }else {
+            repYVarRebEnProString = "";
         }
         if(cbRepYVarCubInd.isChecked()){
-          total+=Float.parseFloat(tvRepYVarCubInd.getText().toString());
+            total += (Float.parseFloat(tvRepYVarCubInd.getText().toString())) * Float.parseFloat(etCantRepYVarCubInd.getText().toString());
+            repYVarCubIndString = "-Cubeta individual:\n-----Cantidad: " + etCantRepYVarCubInd.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarCubInd.getText().toString()) * Float.parseFloat(etCantRepYVarCubInd.getText().toString())) + "\n";
+        }else {
+            repYVarCubIndString = "";
         }
         if(cbRepYVarPlacVacPre.isChecked()){
-          total+=Float.parseFloat(tvRepYVarPlacVacPre.getText().toString());
+            total += (Float.parseFloat(tvRepYVarPlacVacPre.getText().toString())) * Float.parseFloat(etCantRepYVarPlacVacPre.getText().toString());
+            repYVarPlacVacPreString = "-Placa vacu-press:\n-----Cantidad: " + etCantRepYVarPlacVacPre.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarPlacVacPre.getText().toString()) * Float.parseFloat(etCantRepYVarPlacVacPre.getText().toString())) + "\n";
+        }else {
+            repYVarPlacVacPreString = "";
         }
         if(cbRepYVarArmCroCob.isChecked()){
-          total+=Float.parseFloat(tvRepYVarArmCroCob.getText().toString());
+            total += (Float.parseFloat(tvRepYVarArmCroCob.getText().toString())) * Float.parseFloat(etCantRepYVarArmCroCob.getText().toString());
+            repYVarArmCroCobString = "-Armazón Cr Co:\n-----Cantidad: " + etCantRepYVarArmCroCob.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvRepYVarArmCroCob.getText().toString()) * Float.parseFloat(etCantRepYVarArmCroCob.getText().toString())) + "\n";
+        }else {
+            repYVarArmCroCobString = "";
         }
-
         if(cbOrtSinExp.isChecked()){
-          total+=Float.parseFloat(tvOrtSinExp.getText().toString());
+            total += (Float.parseFloat(tvOrtSinExp.getText().toString())) * Float.parseFloat(etCantOrtSinExp.getText().toString());
+            ortSinExpString = "-Ortodoncia sin expanción:\n-----Cantidad: " + etCantOrtSinExp.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvOrtSinExp.getText().toString()) * Float.parseFloat(etCantOrtSinExp.getText().toString())) + "\n";
+        }else {
+            ortSinExpString = "";
         }
         if(cbOrtConExp.isChecked()){
-          total+=Float.parseFloat(tvOrtConExp.getText().toString());
+            total += (Float.parseFloat(tvOrtConExp.getText().toString())) * Float.parseFloat(etCantOrtConExp.getText().toString());
+            ortConExpString = "-Ortodoncia con expanción:\n-----Cantidad: " + etCantOrtConExp.getText().toString() + "\n-----Precio: $ " + (Float.parseFloat(tvOrtConExp.getText().toString()) * Float.parseFloat(etCantOrtConExp.getText().toString())) + "\n";
+        }else {
+            ortConExpString = "";
         }
 
         total-=valorAnticipo;
@@ -524,16 +627,25 @@ public class MainActivity extends AppCompatActivity {
 
         fechaString="-Fecha: "+tvFecha.getText().toString()+"\n";
         nombreClienteString="-Cliente: "+etNombreCliente.getText().toString()+"\n";
-        anticipoString="-Anticipo: $ "+etAnticipo.getText().toString()+"\n";
-        totalString="-Total: $ "+tvCalcTotal.getText().toString()+"\n";
-        bVerResum.setVisibility(View.VISIBLE);
+        anticipoString="-Anticipo: $ "+etAnticipo.getText().toString()+"\n\n";
+        totalString="\n-Total: $ "+tvCalcTotal.getText().toString()+"\n";
+        mostrarResumen();
+
     }
 
-    public void mostrarResumenButton(View view){
+    public void mostrarResumen(){
 
         Intent i = new Intent(this, Resumen.class );
 
-        i.putExtra("resumen", (fechaString +nombreClienteString+anticipoString+proRem1String+proRem2String+totalString));
+        i.putExtra("resumen", (fechaString
+                +nombreClienteString
+                +anticipoString
+                +proRem1String+proRem2String+proRem3String+proRem4String+proRem5String+proRem6String+proRem7String+
+                proRem8String+proRem9String+proRem10String+proRem11String+proRem12String+proRem13String+proRem14String
+                +proFijCorColString+ proFijCorEnBiolString+proFijPerMunString+proFijZircString+proFijPMAString+proFijCeramString
+                + repYVarPalYEncString+ repYVarAgr1ElemString+ repYVarSubCadUnString+ repYVarRebEnProString+ repYVarCubIndString+repYVarPlacVacPreString+ repYVarArmCroCobString
+                +ortSinExpString+ ortConExpString
+                +totalString));
 
         startActivity(i);
 

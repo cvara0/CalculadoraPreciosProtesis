@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/editTextCantProRem55"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -63,7 +63,7 @@
                 android:text="Cliente"
                 android:textAlignment="center"
                 android:textColor="#FFEBEE"
-                android:textSize="10pt" />
+                android:textSize="11pt" />
 
             <EditText
                 android:id="@+id/editTextNombreCliente"
@@ -83,7 +83,7 @@
                 android:text="Anticipo"
                 android:textAlignment="center"
                 android:textColor="#FFEBEE"
-                android:textSize="10pt" />
+                android:textSize="11pt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -122,7 +122,7 @@
                 android:text="Prótesis removibles (Biotone)"
                 android:textAlignment="center"
                 android:textColor="#FFEBEE"
-                android:textSize="10pt" />
+                android:textSize="11pt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -177,6 +177,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -186,6 +187,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -195,6 +197,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -204,6 +207,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -334,6 +338,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -343,6 +348,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -352,6 +358,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -361,6 +368,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -488,6 +496,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -497,6 +506,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -506,6 +516,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -515,6 +526,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -621,6 +633,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -630,6 +643,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -676,7 +690,7 @@
                 android:text="Prótesis fija"
                 android:textAlignment="center"
                 android:textColor="#FFEBEE"
-                android:textSize="10pt" />
+                android:textSize="11pt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -688,18 +702,18 @@
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1"
-                    android:text="Corona colada"
+                    android:text="Cor. colada"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="11pt" />
 
                 <CheckBox
                     android:id="@+id/checkBoxProFijCorEnBiol"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_weight="1.10"
-                    android:text="Corona en Biolon"
+                    android:text="Cor. en Biolon"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="11pt" />
             </LinearLayout>
 
             <LinearLayout
@@ -712,6 +726,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -721,6 +736,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.10"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -777,7 +793,7 @@
                     android:layout_weight="1"
                     android:text="Perno muñón"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="11pt" />
 
                 <CheckBox
                     android:id="@+id/checkBoxProFijZirc"
@@ -786,7 +802,7 @@
                     android:layout_weight="1"
                     android:text="Zirconio"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="11pt" />
             </LinearLayout>
 
             <LinearLayout
@@ -799,6 +815,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -808,6 +825,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -865,7 +883,7 @@
                     android:layout_weight="1"
                     android:text="PMA"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="11pt" />
 
                 <CheckBox
                     android:id="@+id/checkBoxProFijCeram"
@@ -874,7 +892,7 @@
                     android:layout_weight="1"
                     android:text="Cerámica"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="11pt" />
             </LinearLayout>
 
             <LinearLayout
@@ -887,6 +905,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -896,6 +915,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -944,22 +964,23 @@
                 android:text="Reparaciones y Varios"
                 android:textAlignment="center"
                 android:textColor="#FFEBEE"
-                android:textSize="10pt" />
+                android:textSize="11pt" />
 
             <CheckBox
                 android:id="@+id/checkBoxRepYVarPalYEnc"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
-                android:text="Reparaciones en paladar y encias"
+                android:text="Rep. en paladar y encias"
                 android:textColor="#D500F9"
-                android:textSize="9pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarPalYEnc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -989,15 +1010,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_weight="1"
-                android:text="Reparaciones y agrergado de un elemento"
+                android:text="Rep. y agreg. de un elemento"
                 android:textColor="#D500F9"
-                android:textSize="7.5pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarAgr1Elem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1029,13 +1051,14 @@
                 android:layout_weight="1"
                 android:text="Subsiguiente cada uno"
                 android:textColor="#D500F9"
-                android:textSize="9pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarSubCadUn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1067,13 +1090,14 @@
                 android:layout_weight="1"
                 android:text="Rebosado en prótesis"
                 android:textColor="#D500F9"
-                android:textSize="9pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarRebEnPro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1105,13 +1129,14 @@
                 android:layout_weight="1"
                 android:text="Cubetas individuales"
                 android:textColor="#D500F9"
-                android:textSize="9pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarCubInd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1143,13 +1168,14 @@
                 android:layout_weight="1"
                 android:text="Placa vacu-press"
                 android:textColor="#D500F9"
-                android:textSize="9pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarPlacVacPre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1179,15 +1205,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Armazón de cromo cobalto (Lab. Rochio)"
+                android:text="Armazón de Cr Co"
                 android:textColor="#D500F9"
-                android:textSize="8pt" />
+                android:textSize="11pt" />
 
             <TextView
                 android:id="@+id/textViewRepYVarArmCroCob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="0"
                 android:textAlignment="center"
                 android:textColor="#D500F9"
                 android:textSize="9pt" />
@@ -1213,7 +1240,7 @@
                 android:text="Ortodoncia"
                 android:textAlignment="center"
                 android:textColor="#FFEBEE"
-                android:textSize="10pt" />
+                android:textSize="11pt" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -1227,7 +1254,7 @@
                     android:layout_weight="1"
                     android:text="Sin expansión"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="10pt" />
 
                 <CheckBox
                     android:id="@+id/checkBoxOrtConExp"
@@ -1236,7 +1263,7 @@
                     android:layout_weight="1"
                     android:text="Con expansión"
                     android:textColor="#D500F9"
-                    android:textSize="9pt" />
+                    android:textSize="10pt" />
             </LinearLayout>
 
             <LinearLayout
@@ -1249,6 +1276,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -1258,6 +1286,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:textAlignment="center"
                     android:textColor="#D500F9"
                     android:textSize="9pt" />
@@ -1302,32 +1331,16 @@
                 android:layout_weight="1"
                 android:background="?android:attr/listDivider" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/textViewCalcTotal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/buttonCalcTotal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:onClick="calcularTotalButton"
-                    android:text="Calcular total" />
-
-                <TextView
-                    android:id="@+id/textViewCalcTotal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_weight="1.6"
-                    android:background="#FCE4EC"
-                    android:gravity="left"
-                    android:paddingTop="5dp"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textColor="#D500F9"
-                    android:textSize="14pt" />
-            </LinearLayout>
+                android:layout_height="50dp"
+                android:background="#FCE4EC"
+                android:gravity="left"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#D500F9"
+                android:textSize="16pt" />
 
             <View
                 android:id="@+id/divider14"
@@ -1336,11 +1349,11 @@
                 android:background="?android:attr/listDivider" />
 
             <Button
-                android:id="@+id/buttonVerResum"
+                android:id="@+id/buttonCalcTotal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="mostrarResumenButton"
-                android:text="Ver resumen" />
+                android:layout_height="match_parent"
+                android:onClick="calcularTotalButton"
+                android:text="Mostrar total" />
 
         </LinearLayout>
     </ScrollView>
